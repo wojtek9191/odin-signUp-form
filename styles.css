@@ -19,7 +19,7 @@ body {
 .left-image {
     border: 1px solid black;
     width: 40vw;
-    background-image: url(./images/nobiur-rahman-E0wl2RaN9RU-unsplash.jpg);
+    background-image: url(./images/photo-1489549132488-d00b7eee80f1.avif);
     background-size: cover;
     background-position: right;
 }
@@ -30,13 +30,12 @@ body {
 
 .top-para {
     height: 30vh;
-    background-color: rgb(246, 240, 240);
+    background-color: rgba(249,250,251,255);
     padding: 2rem;
 }
 
 .middle-form {
     height: 40vh;
-    border: 3px solid red;
 }
 
 h3 {
@@ -45,9 +44,9 @@ h3 {
 
 .bottom-section {
     height: 30vh;
-    border: 3px solid purple;
+    background-color: rgba(249,250,251,255);
+    box-shadow: 7px 4px 15px -3px rgba(0,0,0,0.75);
 }
-
 
 .main-div {
     display: flex;
@@ -75,16 +74,33 @@ h3 {
 label {
     font-size: 0.75rem;
     margin-bottom: 2px;
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
 
 input {
-    height: 20px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 5px;
 }
 
-input#password {
-    border: 2px solid green;
-}
-
-input#first-name {
+input#first-name, input#email, input#last-name, input#phone {
     margin-bottom: 20px;
+}
+
+.error {
+    border: 1.5px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 7px 4px 11px -2px rgba(163,161,161,0.74);
 }
