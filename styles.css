@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-image {
+    border: 1px solid black;
+    width: 40vw;
+    background-image: url(./images/nobiur-rahman-E0wl2RaN9RU-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.right-form {
+    width: 60vw;
+}
+
+.top-para {
+    height: 30vh;
+    background-color: rgb(246, 240, 240);
+    padding: 2rem;
+}
+
+.middle-form {
+    height: 40vh;
+    border: 3px solid red;
+}
+
+h3 {
+    padding: 2rem;
+}
+
+.bottom-section {
+    height: 30vh;
+    border: 3px solid purple;
+}
+
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    margin-left: 2rem;
+    width: 250px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+    margin-left: 100px;;
+    width: 250px;
+}
+
+label {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+}
+
+input {
+    height: 20px;
+}
+
+input#password {
+    border: 2px solid green;
+}
+
+input#first-name {
+    margin-bottom: 20px;
+}
