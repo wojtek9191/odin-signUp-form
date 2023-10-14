@@ -5,6 +5,17 @@
 
 }
 
+:root {
+    --red: rgba(199,76,68,255);
+    --sky-blue: rgba(28,53,75,255);
+    --light-gray: rgba(249,250,251,255);
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
 body {
     font-family: sans-serif;
 }
@@ -22,6 +33,9 @@ body {
     background-image: url(./images/photo-1489549132488-d00b7eee80f1.avif);
     background-size: cover;
     background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .right-form {
@@ -30,7 +44,7 @@ body {
 
 .top-para {
     height: 30vh;
-    background-color: rgba(249,250,251,255);
+    background-color: var(--light-gray);
     padding: 2rem;
 }
 
@@ -44,7 +58,7 @@ h3 {
 
 .bottom-section {
     height: 30vh;
-    background-color: rgba(249,250,251,255);
+    background-color: var(--light-gray);
     box-shadow: 7px 4px 15px -3px rgba(0,0,0,0.75);
 }
 
@@ -58,7 +72,6 @@ h3 {
 .left-side {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     margin-left: 2rem;
     width: 250px;
 }
@@ -66,7 +79,6 @@ h3 {
 .right-side {
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
     margin-left: 100px;;
     width: 250px;
 }
@@ -91,16 +103,75 @@ input#first-name, input#email, input#last-name, input#phone {
 }
 
 .error {
-    border: 1.5px solid red;
+    border: 1.5px solid var(--red);
 }
 
 .error-message {
-    color: red;
+    color: rgba(199,76,68,255);
     font-size: 12px;
 }
 
 input:focus {
     outline: none;
-    border: 1px solid blue;
+    border: 1px solid var(--sky-blue);
     box-shadow: 7px 4px 11px -2px rgba(163,161,161,0.74);
+}
+
+button {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(199,76,68,255);
+    color: white;
+    box-shadow: 7px 4px 11px -2px rgba(163,161,161,0.74);
+}
+
+.bottom-para {
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+a {
+    color: var(--sky-blue);
+    font-weight: bold;
+}
+
+.credits, .credits > a {
+  color: white;
+  font-size: 0.9em;
+}
+
+.bottom-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.black-background {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-odin {
+    height: 70%;
+}
+
+.odin-txt {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 120px;
+    margin-top: 30px;
 }
