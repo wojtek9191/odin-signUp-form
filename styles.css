@@ -109,6 +109,7 @@ input#first-name, input#email, input#last-name, input#phone {
 .error-message {
     color: rgba(199,76,68,255);
     font-size: 12px;
+    visibility: hidden;
 }
 
 input:focus {
